@@ -62,6 +62,7 @@ class Draw(JSCSSMixin, MacroElement):
                 layer.on('click', function() {
                     alert(coords);
                     console.log(coords);
+                    document.getElementsByName('coords')[0].innerHTML = coords;
                 });
                 drawnItems.addLayer(layer);
              });

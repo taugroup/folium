@@ -1,3 +1,7 @@
+## This is a modified version of Folium exclusively developed for Tau Group Research
+
+Credits : `Folium <https://python-visualization.github.io/folium/>`_ 
+
 |PyPI| |Test| |Gitter| |DOI| |binder|
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/folium.svg
