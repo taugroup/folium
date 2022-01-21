@@ -64,6 +64,7 @@ class Draw(JSCSSMixin, MacroElement):
                     alert(coordsData);
                     console.log(coordsData);
                     document.getElementsByName('coords')[0].value = coordsData;
+                    document.getElementsByName('coordinates')[0].style.display = '';
                 });
                 drawnItems.addLayer(layer);
              });
