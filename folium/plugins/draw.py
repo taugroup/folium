@@ -58,11 +58,12 @@ class Draw(JSCSSMixin, MacroElement):
             {{ this._parent.get_name() }}.on(L.Draw.Event.CREATED, function(e) {
                 var layer = e.layer,
                     type = e.layerType;
-                var coords = JSON.stringify(layer.toGeoJSON());
+                var coordsData = layer.toGeoJSON();
+                coordsData = JSON.stringify(coordsData.geometry);
                 layer.on('click', function() {
-                    alert(coords);
-                    console.log(coords);
-                    document.getElementsByName('coords')[0].innerHTML = coords;
+                    alert(coordsData);
+                    console.log(coordsData);
+                    document.getElementsByName('coords')[0].value = coordsData;
                 });
                 drawnItems.addLayer(layer);
              });
